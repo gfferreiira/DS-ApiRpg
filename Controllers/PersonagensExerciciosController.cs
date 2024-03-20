@@ -83,10 +83,11 @@ namespace RpgApi.Controllers
             return Ok("Quantidade de personagens: " + personagens.Count + "  Soma de inteligencia: " + personagens.Sum(p => p.Inteligencia));
         }
 
-        [HttpGet("GetByClasse/{enumId}")]
+       
 
 
         // Exercicio F
+         [HttpGet("GetByClasse/{enumId}")]
         public IActionResult GetByClasse(int enumId)
         {
             ClasseEnum enumDigitado = (ClasseEnum)enumId;
